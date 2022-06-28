@@ -3,10 +3,22 @@ package entidade;
 public class Pessoa {
 	
 	//Atributos
+	private String cpf;
 	private String nome;
 	private String dataNascimento;
 	private double alturaEmMetros;
 	private char sexo;
+	
+	//Construtores
+	public Pessoa() {
+		
+	}
+	
+	public Pessoa(String nomeDaPessoa, String cpf) {
+		this.nome = nomeDaPessoa;
+		this.cpf = cpf;
+	}
+	
 	
 	//Métodos
 	public int calcularIdade(int anoAtual) {
