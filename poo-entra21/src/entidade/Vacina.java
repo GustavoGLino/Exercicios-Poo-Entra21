@@ -1,16 +1,19 @@
 package entidade;
 
 public class Vacina {
-	
+
 	//Atributos
 	private String paisOrigem;
 	private int estagioPesquisa;
+	
+	//TODO trocar para tipo data
 	private String dataInicioPesquisa;
 	private String nomePesquisadorResponsavel;
-	private String cpf;
 	
 	
-	//Metodos
+	//Métodos
+	
+	//Getters e setters
 	public String getPaisOrigem() {
 		return paisOrigem;
 	}
@@ -35,15 +38,4 @@ public class Vacina {
 	public void setNomePesquisadorResponsavel(String nomePesquisadorResponsavel) {
 		this.nomePesquisadorResponsavel = nomePesquisadorResponsavel;
 	}
-	public String getCpf() {
-		return cpf;
-	}
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
-	}
-	
-	
-	
-	
-
 }

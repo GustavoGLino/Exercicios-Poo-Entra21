@@ -19,7 +19,15 @@ public class Pessoa {
 		this.cpf = cpf;
 	}
 	
-	
+	public Pessoa(String cpf, String nome, String dataNascimento, double alturaEmMetros, char sexo) {
+		super();
+		this.cpf = cpf;
+		this.nome = nome;
+		this.dataNascimento = dataNascimento;
+		this.alturaEmMetros = alturaEmMetros;
+		this.sexo = sexo;
+	}
+
 	//Métodos
 	public int calcularIdade(int anoAtual) {
 		int idade = 0;
@@ -62,5 +70,13 @@ public class Pessoa {
 
 	public void setSexo(char sexo) {
 		this.sexo = sexo;
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
 	}
 }
